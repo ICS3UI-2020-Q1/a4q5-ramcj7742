@@ -17,12 +17,21 @@ public class Main {
     System.out.println("Please enter a positive integer to see the hailstone sequence.");
     int num = input.nextInt();
 
+
     //hailstone pattern
     while(num != 1){
+      //Equations for odd and even numbers
+      int oddNum = num * 3 + 1;
+      int evenNum = num / 2;
+      //Determines weather number is odd or even and displays correct number
       if(num % 2 == 0){
-        System.out.println(num / 2);
+        System.out.println(evenNum);
+        //changes value of num so it doesnt become an infinite loop
+        num = num / 2;
       }else if(num % 2 != 0){
-        System.out.println(num * 3 + 1);
+        System.out.println(oddNum);
+        //changes value of num so it doesnt become an infinite loop
+        num = num * 3 + 1;
       }
     }
     
