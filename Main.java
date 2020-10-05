@@ -20,6 +20,7 @@ public class Main {
     System.out.println("Hailstone sequence is the following:");
 
     //hailstone pattern
+    System.out.println(num);
     while(num != 1){
       //Equations for odd and even numbers
       int oddNum = num * 3 + 1;
