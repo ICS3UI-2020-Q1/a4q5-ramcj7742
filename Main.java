@@ -17,6 +17,7 @@ public class Main {
     System.out.println("Please enter a positive integer to see the hailstone sequence.");
     int num = input.nextInt();
 
+    System.out.println("Hailstone sequence is the following:");
 
     //hailstone pattern
     while(num != 1){
